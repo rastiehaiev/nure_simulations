@@ -119,7 +119,7 @@
 ```
 to grow-grass-and-weeds
   ask patches [
-    if pcolor = black or pcolor = green [
+    if pcolor = black [
       if random-float 1000 < weeds-grow-rate
         [ set pcolor violet ]
       if random-float 1000 < grass-grow-rate
@@ -128,7 +128,7 @@ to grow-grass-and-weeds
   ]
 end
 ```
-Змінимо код таким чином, щоб це працювало навпаки, таким чином зимітуємо негативний вплив бурʼяну на ріст трави:
+Змінимо код, щоб це працювало навпаки, таким чином зімітуємо негативний вплив бурʼяну на ріст трави:
 ```
 to grow-grass-and-weeds
   ask patches [
