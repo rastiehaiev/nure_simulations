@@ -81,6 +81,7 @@ to eat-weeds  ;; rabbit procedure
     [
       set color yellow
       set health 0
+      set pcolor black
     ]
     [
       set pcolor black
