@@ -47,9 +47,12 @@ to move  ;; rabbit procedure
   set age age + 1
   ifelse health = 3
   [
-    ifelse isMale
-      [ set color blue ]
-      [ set color pink ]
+    if color = yellow
+    [
+      ifelse isMale
+        [ set color blue ]
+        [ set color pink ]
+    ]
     rt random 50
     lt random 50
     fd 1
