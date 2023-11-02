@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="us-ascii"?>
+<!DOCTYPE search SYSTEM "behaviorsearch.dtd">
+<search>
+    <bsearchVersionNumber>1.10</bsearchVersionNumber>
+    <modelInfo>
+        <modelFile>/Users/rastiehaiev/project/test/nure_simulations/Simulation_Lab3/model.nlogo</modelFile>
+        <modelSetupCommands>setup</modelSetupCommands>
+        <modelStepCommands>go</modelStepCommands>
+        <modelStopCondition/>
+        <modelStepLimit>500</modelStepLimit>
+        <modelMetricReporter>count rabbits</modelMetricReporter>
+        <modelMeasureIf>true</modelMeasureIf>
+    </modelInfo>
+    <fitnessInfo>
+        <fitnessMinimized>false</fitnessMinimized>
+        <fitnessCollecting>MEAN_ACROSS_STEPS</fitnessCollecting>
+        <fitnessSamplingReplications>10</fitnessSamplingReplications>
+        <fitnessCombineReplications>MEAN</fitnessCombineReplications>
+    </fitnessInfo>
+    <searchSpace>
+        <paramSpec>["grass-grow-rate" [0 1 20]]</paramSpec>
+        <paramSpec>["weeds-grow-rate" [0 1 20]]</paramSpec>
+        <paramSpec>["grass-energy" [0 0.5 10]]</paramSpec>
+        <paramSpec>["weed-energy" [0 0.5 10]]</paramSpec>
+        <paramSpec>["number" [0 1 500]]</paramSpec>
+        <paramSpec>["birth-threshold" [5 1 20]]</paramSpec>
+    </searchSpace>
+    <searchMethod type="RandomSearch"/>
+    <chromosomeRepresentation type="RealHypercubeChromosome"/>
+    <caching>true</caching>
+    <evaluationLimit>3000</evaluationLimit>
+    <bestCheckingNumReplications>0</bestCheckingNumReplications>
+</search>
